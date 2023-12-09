@@ -1,0 +1,135 @@
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+/* Cely banner */
+
+.product {
+    display: flex;
+    height: 440px;
+    margin: 30px;
+    width: 710px;
+    box-shadow: 0 4px 8px 0 #959595;
+}
+
+/* Visual - leva strana */
+
+.visual {
+    background-color: black;
+    color: white;
+    position: relative;
+    width: 335px;
+}
+
+.laptop {
+    position: relative;
+    left: -80px;
+    bottom: -10px
+}
+
+.logo {
+    margin: 30px 0 0 30px;
+}
+
+.slogan {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0 10px 30px;
+}
+
+
+/* Detaily - prava strana*/
+
+
+.details {
+    padding: 0px 30px;
+    width: 375px;
+    background: linear-gradient(to bottom,#aaa4a9, #1e1e1f);
+    position: relative;
+    height: 440px;
+}
+
+.akce{
+    background-color: #E42022;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    left: 70px;
+    top: 2px;
+    font-size: 16px;
+}
+
+.akce:hover {
+    background-color: rgba(0, 0, 0, 0.142);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-transform:uppercase
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.under {
+    font-weight: 700;
+}
+
+li {
+    padding: 2px;
+    font-size: 14px;
+    color: rgb(251, 249, 249);
+}
+
+@media screen and (max-width: 768px) {
+
+    .product {
+        display: inline;
+        margin: 30px;
+        min-width: 375px;
+    }
+
+    .visual {
+        background-color: black;
+        color: white;
+        position: relative;
+        min-width: 375px;
+        padding-top: 2px;
+    }
+    
+    .laptop {
+        position: relative;
+        left: -30px;
+        bottom: 10px
+    }
+
+    .details {
+        padding: 10px 30px;
+        min-width: 375px;
+        background: linear-gradient(to bottom,#aaa4a9, #1e1e1f);
+        position: relative;
+        height: 450px;
+    }
+
+}
