@@ -10,6 +10,8 @@ body {
     font-weight: 500;
     font-size: 14px;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -21,7 +23,7 @@ h1 {
 .product {
     display: flex;
     height: 440px;
-    margin: 30px;
+    margin: 30px 50px;
     width: 710px;
     box-shadow: 0 4px 8px 0 #959595;
 }
@@ -32,13 +34,13 @@ h1 {
     background-color: black;
     color: white;
     position: relative;
-    width: 335px;
+    min-width: 335px;
 }
 
 .laptop {
     position: relative;
     left: -80px;
-    bottom: -10px
+    bottom: -10px;
 }
 
 .logo {
@@ -57,7 +59,7 @@ h1 {
 
 .details {
     padding: 0px 30px;
-    width: 375px;
+    min-width: 375px;
     background: linear-gradient(to bottom,#aaa4a9, #1e1e1f);
     position: relative;
     height: 440px;
@@ -70,8 +72,7 @@ h1 {
     text-align: center;
     border-radius: 5px;
     position: relative;
-    left: 70px;
-    top: 2px;
+    margin: auto;
     font-size: 16px;
 }
 
@@ -102,12 +103,14 @@ li {
     color: rgb(251, 249, 249);
 }
 
-@media screen and (max-width: 768px) {
+
+
+@media screen and (max-width: 860px) {
 
     .product {
         display: inline;
-        margin: 30px;
         min-width: 375px;
+        margin: 0;
     }
 
     .visual {
@@ -116,12 +119,13 @@ li {
         position: relative;
         min-width: 375px;
         padding-top: 2px;
+        min-height: 450px;
     }
     
     .laptop {
         position: relative;
         left: -30px;
-        bottom: 10px
+        bottom: 2px;
     }
 
     .details {
@@ -129,7 +133,7 @@ li {
         min-width: 375px;
         background: linear-gradient(to bottom,#aaa4a9, #1e1e1f);
         position: relative;
-        height: 450px;
+        min-height: 450px;
     }
 
 }
