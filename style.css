@@ -109,15 +109,15 @@ li {
 
     .product {
         display: inline;
-        min-width: 400px;
-        margin: 0;
+        min-width: 375px;
+        margin: 0px;
     }
 
     .visual {
         background-color: black;
         color: white;
         position: relative;
-        min-width: 400px;
+        min-width: 375px;
         padding-top: 2px;
         min-height: 450px;
     }
@@ -130,7 +130,7 @@ li {
 
     .details {
         padding: 10px 30px;
-        min-width: 400px;
+        min-width: 375px;
         background: linear-gradient(to bottom,#aaa4a9, #1e1e1f);
         position: relative;
         min-height: 450px;
